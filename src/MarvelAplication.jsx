@@ -17,20 +17,22 @@ export const MarvelAplication = () => {
     }
 
   return (
-    <div>
-            <h1>Marvel API</h1>
+    <div className='col-12 py-3'>
+            <h1 className='text-center fw-bold  text-uppercase'>Marvel API</h1>
             <div>
                 <Card 
                     imagenes={ imagenes }
                     isLoading={ isLoading } />
             </div>
-            <div>
+            <div className='d-flex justify-content-center gap-5 my-3'>
                 <button
+                    className='btn btn-outline-primary'
                     disabled={ isLoading || pagina === 0 }
                     onClick={ handleBackPage }>
                     Anterior
                 </button>
                 <button
+                    className='btn btn-outline-primary'
                     disabled={ isLoading }
                     onClick={ handleNextPage }>
                     Siguiente

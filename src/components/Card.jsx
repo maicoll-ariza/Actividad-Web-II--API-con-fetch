@@ -8,13 +8,15 @@ export const Card = ({ imagenes, isLoading }) => {
     }
 
   return (
-    <div>
-        <h3>Tus gifs e imagenes favoritas aquí</h3>
-        {
+    <div className='d-flex flex-column justify-content-center align-items-center'>
+        <h3 className='fw-light text-uppercase'>Tus gifs e imagenes favoritas aquí</h3>
+        <div className='d-flex justify-content-around flex-wrap gap-3'>
+            {
             imagenes.map( imagen => (
                 <ItemCard key={ imagen.id } { ...imagen } />
-            ))
-        }
+                ))
+            }
+        </div>
     </div>
   )
 }
