@@ -18,7 +18,7 @@ export const MarvelAplication = () => {
 
   return (
     <div className='col-12 py-3'>
-            <h1 className='text-center fw-bold  text-uppercase'>Marvel API</h1>
+           <h1 className='fw-light text-center text-uppercase py-4'>Tus gifs e imagenes favoritas aquí</h1>
             <div>
                 <Card 
                     imagenes={ imagenes }
