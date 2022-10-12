@@ -1,12 +1,12 @@
 import React from 'react'
 
-export const ItemCard = () => {
+export const ItemCard = ({ image, id, title, type }) => {
   return (
     <div>
-        {/* <img src="..." class="card-img-top" alt="..." /> */}
+        <img src={ image } alt="Gifs de Giphy Developers" />
         <div >
-            <h5 >Card title</h5>
-            <p >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 >{ title }</h5>
+            <p >El tipo de archivo es: <span>{ type }</span></p>
         </div>
     </div>
   )
